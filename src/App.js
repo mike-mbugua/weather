@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useEffect } from "react";
 import Search from "./components/search/Search";
+import CurrentWeather from "./components/current-weather/CurrentWeather";
 
 function App() {
   const handleChange = (searchData) => {
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="container">
       <Search onSearchChange={handleChange} />
+      <CurrentWeather />
     </div>
   );
 }
